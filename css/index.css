@@ -1,0 +1,148 @@
+
+body {
+    background-color: transparent;
+    margin: 0;
+}
+
+/*
+---------------------------
+ Grid
+---------------------------
+*/
+
+.wrapper {
+    display: grid;
+    grid-template:
+    "header-1" 70px
+    "content" 430px
+    /1fr;
+}
+
+.header-1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 200%;
+    padding-top: 20px;
+}
+
+/*
+---------------------------
+ Grid
+---------------------------
+*/
+
+.content {
+    display: grid;
+    grid-template:
+    "display-area" 80px
+    "button-area" 400px
+    /1fr;
+}
+
+.display-area {
+    grid-area: display-area;
+    background-color: lightgrey;
+    border-radius: 5px;
+    font-size: 200%;
+    padding: 10px 0px 0px 0px;
+}
+
+.textbox {
+    height: 40px;
+    width: 80%;
+    font-size: 90%;
+    margin: 5px 0px 0px 7%;
+}
+
+/*
+---------------------------
+ Grid
+---------------------------
+*/
+
+.button-area {
+display: grid;
+grid-template:
+    "c1r1 c2r1 c3r1 c4r1" 20%
+    "c1r2 c2r2 c3r2 c4r2" 20%
+    "c1r3 c2r3 c3r3 c4r3" 20%
+    "c1r4 c2r4 c3r4 c4r4" 20%
+    "equal-button equal-button equal-button equal-button" 20%
+    /1fr 1fr 1fr 1fr;
+}
+
+/* Define grid-areas */
+
+/* Column-1 */
+.c1r1 {grid-area: c1r1;}
+.c1r2 {grid-area: c1r2;}
+.c1r3 {grid-area: c1r3;}
+.c1r4 {grid-area: c1r4;}
+/* Column-2 */
+.c2r1 {grid-area: c2r1;}
+.c2r2 {grid-area: c2r2;}
+.c2r3 {grid-area: c2r3;}
+.c2r4 {grid-area: c2r4;}
+/* Column-3 */
+.c3r1 {grid-area: c3r1;}
+.c3r2 {grid-area: c3r2;}
+.c3r3 {grid-area: c3r3;}
+.c3r4 {grid-area: c3r4;}
+/* Column-4 */
+.c4r1 {grid-area: c4r1;}
+.c4r2 {grid-area: c4r2;}
+.c4r3 {grid-area: c4r3;}
+.c4r4 {grid-area: c4r4;}
+
+.equal-button {grid-area: equal-button;}
+
+.equal-button {
+    background-color: #d3c7a2;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 10px;
+    font-size: 200%;
+}
+
+/* Press down button effect  */
+.c1r1:active,
+.c2r1:active {
+    background-color: grey;
+}
+
+.button-area {
+    margin: 10px 15px 5px 15px;
+}
+
+/* Layout */
+
+/* column-1 */
+.c1r1,
+.c1r2,
+.c1r3,
+.c1r4,
+/* column-2 */
+.c2r1,
+.c2r2,
+.c2r3,
+.c2r4,
+/* column-3 */
+.c3r1,
+.c3r2,
+.c3r3,
+.c3r4,
+/* column-4 */
+.c4r1,
+.c4r2,
+.c4r3,
+.c4r4 {
+    background-color: steelblue;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 200%;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+}
